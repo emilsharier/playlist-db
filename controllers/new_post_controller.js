@@ -13,12 +13,13 @@ const newPost = async (req, res, next) => {
       title: title,
       content: content,
       genres: genres,
+      liked_by: [],
     };
     const result = await PostCollection.insertOne(obj);
     if (result) {
       return res
         .json({ status: "OK", message: "Posted succesfully" })
-        .statusCode(200);
+        .status(200);
     } else {
       next("Couldn't post!");
     }

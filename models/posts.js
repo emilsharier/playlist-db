@@ -7,6 +7,7 @@ const Posts = Joi.object({
   content: Joi.string().require(),
   genres: Joi.array().required(),
   likes: Joi.number().default(0),
+  liked_by: Joi.array(),
   comments: Joi.array(),
 });
 
