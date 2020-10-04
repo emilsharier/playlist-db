@@ -1,9 +1,9 @@
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
-const config = require("../config/jwt_config");
+const config = require("../../config/jwt_config");
 const uniqid = require("uniqid");
 
-const mongoDB = require("../DB/db");
+const mongoDB = require("../../DB/db");
 const db = mongoDB.getDB();
 
 /* User sign up using email and password

@@ -1,4 +1,4 @@
-const mongoDb = require("../DB/db");
+const mongoDb = require("../../DB/db");
 
 const db = mongoDb.getDB();
 

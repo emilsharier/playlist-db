@@ -1,4 +1,4 @@
-const mongoDB = require("../DB/db");
+const mongoDB = require("../../DB/db");
 const db = mongoDB.getDB();
 
 const fetchUserDetails = async (uid) => {

@@ -6,6 +6,8 @@ const Users = Joi.object({
   phone: Joi.string().required(),
   email: Joi.string().email(),
   password: Joi.string().required(),
+  followers: Joi.array().default([""]),
+  following: Joi.array().default([""]),
 });
 
 module.exports = Users;
