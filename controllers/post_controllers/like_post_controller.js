@@ -1,6 +1,4 @@
-const router = require("express").Router();
-const mongoDb = require("../DB/db");
-
+const mongoDb = require("../../DB/db");
 const db = mongoDb.getDB();
 
 const likePost = async (req, res, next) => {

@@ -1,5 +1,4 @@
 const mongoDb = require("../../DB/db");
-
 const db = mongoDb.getDB();
 
 const editPost = async (req, res, next) => {
