@@ -8,7 +8,6 @@ module.exports = {
   connect_to_server: function (callback) {
     MongoClient.connect(url, { useUnifiedTopology: true }, (err, client) => {
       _db = client.db(DB);
-      // _db.collection('lol')
       return callback(err);
     });
   },
